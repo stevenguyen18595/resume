@@ -1,1 +1,13 @@
 @use "./node_modules/bootstrap/scss/bootstrap";
+@use "../../styles.scss";
+img{
+    height:260px !important;
+    width: 260px !important;
+}
+
+a{
+    color: white;
+    &:hover{
+        color: styles.$secondary-font-color;
+    }
+}

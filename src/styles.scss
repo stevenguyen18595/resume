@@ -4,9 +4,11 @@ $background-color: black;
 //---------------------------------------------------
 $primary-font-color: white;
 $primary-font: "DejaVu Sans";
-
+$secondary-font-color: #4b7470;
 // ---------------------------------------------------
+$primary-color: white;
 $secondary-color: #4b7470;
+
 body {
   background-color: $background-color !important;
   color: $primary-font-color !important;

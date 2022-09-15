@@ -1,6 +1,7 @@
 @use "../../styles.scss";
 nav {
   background-color: black !important;
+  margin-top: 2rem;
 }
 a {
   color: white;
@@ -10,6 +11,6 @@ a {
   }
 }
 hr {
-  background-color: styles.$secondary-color !important;
-  height: 1rem !important;
+  background-color: styles.$primary-color !important;
+  height: 2px !important;
 }
