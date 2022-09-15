@@ -1,0 +1,15 @@
+@use "../../styles.scss";
+nav {
+  background-color: black !important;
+}
+a {
+  color: white;
+  &:hover {
+    color: white;
+    background-color: #4b7470;
+  }
+}
+hr {
+  background-color: styles.$secondary-color !important;
+  height: 1rem !important;
+}
