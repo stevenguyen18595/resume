@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, SafeResourceUrl } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,6 +38,21 @@ export class AppModule {
       'leet-code',
       this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/img/leetcode-white.svg")
     );
-
+    this.matIconRegistry.addSvgIcon(
+      'speak-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/img/speak-icon.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      'firework-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/img/firework-icon.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      'skill-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/img/skill-icon.svg")
+    )
+    this.matIconRegistry.addSvgIcon(
+      'heart-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../assets/img/heart-icon.svg")
+    )
   }
  }

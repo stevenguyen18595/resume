@@ -31,4 +31,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 p{
   font-size: 14px;
 }
+hr{
+  border: 1px solid $primary-color !important;
+  opacity: 1; 
+}
 
