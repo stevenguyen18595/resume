@@ -1,3 +1,12 @@
-p{
-    text-align: center;
+@use "../../styles.scss";
+
+p {
+  text-align: center;
+}
+
+.footer {
+  border-top: 1px solid styles.$primary-color;
+}
+.footer-content {
+  margin: 1rem;
 }

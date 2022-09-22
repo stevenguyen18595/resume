@@ -1,51 +1,47 @@
 @use "./node_modules/bootstrap/scss/bootstrap";
 @use "../../styles.scss";
-img{
-    max-height:270px !important;
-    max-width: 270px !important;
+img {
+  max-height: 270px !important;
+  max-width: 270px !important;
 }
 
-a{
-    color: white;
-    &:hover{
-        color: styles.$secondary-font-color;
-    };
+a {
+  color: styles.$primary-color;
+  &:hover {
+    color: styles.$secondary-font-color;
+  }
 }
 
-p{
-    align-items: center;
-    margin-top: 1rem;
+p {
+  align-items: center;
+  margin-top: 1rem;
 }
 
 mat-list-item {
-    &.mat-list-item{
-        height: 30px;
-    }
-
+  &.mat-list-item {
+    height: 30px;
+  }
 }
 
-mat-list{
-    margin-top: 1rem;
+mat-list {
+  margin-top: 1rem;
 }
 
-mat-chip{
-    &.mat-standard-chip {
-        padding-left: 4px;
-    }
+mat-chip {
+  &.mat-standard-chip {
+    padding-left: 4px;
+  }
 }
 
-
-:host ::ng-deep .mat-list-base .mat-list-item .mat-list-item-content{
-    padding-left: 0px;
+:host ::ng-deep .mat-list-base .mat-list-item .mat-list-item-content {
+  padding-left: 0px;
 }
-
 
 //class  style
-.icon-space{
-    padding-right:1rem;
+.icon-space {
+  padding-right: 1rem;
 }
 
-mat-icon.icon:hover{
-    fill: styles.$secondary-color;
-
-  }
+mat-icon.icon:hover {
+  fill: styles.$secondary-color;
+}

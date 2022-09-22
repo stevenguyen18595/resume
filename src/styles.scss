@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -19,6 +18,8 @@ $secondary-font-color: #4b7470;
 // ---------------------------------------------------
 $primary-color: white;
 $secondary-color: #4b7470;
+//----------------------------------------------------
+$grey-0: #4c4c4c;
 
 body {
   background-color: $background-color !important;
@@ -26,13 +27,18 @@ body {
   font-family: $primary-font !important;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-p{
-  font-size: 14px;
+html,
+body {
+  height: 100%;
 }
-hr{
-  border: 1px solid $primary-color !important;
-  opacity: 1; 
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+p {
+  font-size: 14px;
+}
+hr {
+  border: 1px solid $primary-color;
+}

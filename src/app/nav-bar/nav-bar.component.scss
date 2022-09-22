@@ -1,12 +1,38 @@
 @use "../../styles.scss";
+
 nav {
-  background-color: black !important;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid styles.$primary-color;
 }
 a {
-  color: white;
+  color: styles.$primary-color;
+  line-height: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
   &:hover {
-    color: white;
-    background-color: #4b7470;
+    color: styles.$primary-color;
+    background-color: styles.$grey-0;
+    border-radius: 10px;
+  }
+  &:visited {
+    color: styles.$primary-color;
+    background-color: styles.$grey-0;
+    border-radius: 10px;
+  }
+  &:active {
+    color: styles.$primary-color;
+    background-color: styles.$grey-0;
+    border-radius: 10px;
+  }
+}
+li {
+  &.nav-item:active {
+    border-bottom: 1px solid white;
+  }
+  &.nav-item:visited {
+    border-bottom: 1px solid white !important;
+  }
+  &.nav-item.selected {
+    border-bottom: 1px solid white !important;
   }
 }

@@ -1,14 +1,30 @@
-<nav class="nav nav-pills justify-content-center">
-  <a class="nav-item nav-link" href="#">
-    <span><i class="fa fa-home" aria-hidden="true"></i></span> Overview
-  </a>
-  <a class="nav-item nav-link" href="#"
-    ><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
-    Portfolio</a
+<nav class="navbar navbar-expand-lg">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
   >
-  <a class="nav-item nav-link" href="#">
-    <span><i class="fa fa-cloud-download" aria-hidden="true"></i></span> My
-    CV</a
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse justify-content-center"
+    id="navbarSupportedContent"
   >
+    <ul class="navbar-nav mr-auto justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" (click)="goToIndex()" href="#">Overview </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My CV</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<hr />
