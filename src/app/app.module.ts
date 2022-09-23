@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +31,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatChipsModule,
     HttpClientModule,
     MatTabsModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -3,8 +3,8 @@
 $spacer: 1rem;
 .title {
   margin-top: 1rem;
-  margin-left: 3.2rem;
-  margin-bottom: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
 }
 .introduction-box {
   border: 1px solid styles.$primary-color;
@@ -21,8 +21,19 @@ $spacer: 1rem;
   margin-right: $spacer;
 }
 
-:host::ng-deep mat-list-item.mat-list-item {
-  height: 40px;
+:host::ng-deep {
+  & mat-list-item.mat-list-item {
+    height: 30px;
+  }
+  & mat-list {
+    margin-bottom: 1rem;
+  }
+  & mat-chip {
+    background-color: styles.$secondary-color;
+    &:hover {
+      background-color: styles.$grey-0;
+    }
+  }
 }
 p {
   margin: 0;
