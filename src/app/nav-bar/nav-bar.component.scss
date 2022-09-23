@@ -1,10 +1,14 @@
 @use "../../styles.scss";
 
+
 button {
   background-color: styles.$secondary-color;
   color: styles.$primary-color;
   display: flex;
   border-radius: 5px;
+  &:hover{
+    background-color: styles.$grey-0;
+  }
 }
 p {
   margin: 0px;

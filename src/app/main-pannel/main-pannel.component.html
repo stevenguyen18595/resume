@@ -1,6 +1,5 @@
 <!-- -------------------------------introduction session-------------------------------- -->
-<div class="title mt-6">About me</div>
-<div class="introduction-box mt-1">
+<div class="introduction-box mt-5">
   <div class="row g-0">
     <mat-list>
       <mat-list-item>
@@ -23,7 +22,7 @@
   </div>
 </div>
 <!-- ---------------------------Skill Session--------------------------------------------------------- -->
-<div class="skill-session mt-5">
+<div class="skill-session mt-4">
   <div class="title">Skills</div>
   <mat-chip-list #chipList aria-label="skill selection">
     <mat-chip color="accent" *ngFor="let skill of skills">
@@ -33,4 +32,52 @@
       </button>
     </mat-chip>
   </mat-chip-list>
+</div>
+<!-- ------------------------------Employment History---------------------------------------------------------- -->
+<div class="row employment-history mt-4">
+  <div class="tittle">Employment History</div>
+  <div class="col-6 mt-3">
+    <div class="history">
+      <div class="business-name mt-2">
+        <mat-icon> business</mat-icon>
+        <h4>Patient Zero Pty Ltd</h4>
+        <p>Jan 2022</p>
+        <mat-icon>timeline</mat-icon>
+        <p> present</p>
+      </div>
+      <p>As a Developer, I’m part of a cross functional team that delivers working software for clients that helps them
+        solve real business problems.
+      </p>
+    </div>
+    <div class="history mt-3">
+      <div class="business-name mt-2">
+        <mat-icon> business</mat-icon>
+        <h4>Insurebot Pty Ltd</h4>
+        <p>Aug 2021</p>
+        <mat-icon>timeline</mat-icon>
+        <p>Jan 2022</p>
+      </div>
+      <p>As a developer, I am part of a team building beautiful software that automates the insurance broker function.
+      </p>
+    </div>
+  </div>
+  <div class="col-6 mt-3">
+    <div class="history">
+      <div class="business-name">
+        <mat-icon>business</mat-icon>
+        <h4>Freelancer</h4>
+        <p>July 2016</p>
+        <mat-icon>timeline</mat-icon>
+        <p> present</p>
+      </div>
+      <p>As a developer, I have a joy of making website | web application for small business in my freetime</p>
+    </div>
+    <div class="mt-3">
+
+    </div>
+  </div>
+</div>
+<!-- -------------------------------------Education History---------------------------------------------------- -->
+<div class="row education-history">
+
 </div>

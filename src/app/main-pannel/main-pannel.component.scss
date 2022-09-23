@@ -1,25 +1,7 @@
 @use "../../styles.scss";
 
 $spacer: 1rem;
-.title {
-  margin-top: 1rem;
-  margin-left: 0rem;
-  margin-bottom: 1rem;
-}
-.introduction-box {
-  border: 1px solid styles.$primary-color;
-  border-radius: 6px;
-}
-.mt-6 {
-  margin-top: ($spacer * 5);
-}
-.icon {
-  margin-left: $spacer * 2;
-  margin-right: $spacer;
-}
-.icon2 {
-  margin-right: $spacer;
-}
+
 
 :host::ng-deep {
   & mat-list-item.mat-list-item {
@@ -38,4 +20,47 @@ $spacer: 1rem;
 p {
   margin: 0;
   text-align: middle;
+}
+.title {
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 0.6rem;
+}
+.introduction-box {
+  border: 1px solid styles.$primary-color;
+  border-radius: 6px;
+}
+.mt-6 {
+  margin-top: ($spacer * 5);
+}
+.icon {
+  margin-left: $spacer * 2;
+  margin-right: $spacer;
+}
+.icon2 {
+  margin-right: $spacer;
+}
+
+.history{
+  height:105px;
+  border: 0.5px solid styles.$primary-color;
+  border-radius: 5px;
+  & > p {
+    margin-left:0.6rem;
+    margin-top:0.5rem;
+  }
+}
+.business-name{
+  display: flex;
+  align-items: center;
+  & h4{
+    color: styles.$secondary-color;
+    font-weight: 700;
+    margin:0px;
+    margin-right:1rem;
+  }
+  & mat-icon{
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+  }
 }
