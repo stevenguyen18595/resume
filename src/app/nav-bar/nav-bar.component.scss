@@ -1,31 +1,28 @@
 @use "../../styles.scss";
 
+button {
+  background-color: styles.$secondary-color;
+  color: styles.$primary-color;
+  display: flex;
+  border-radius: 5px;
+}
+p {
+  margin: 0px;
+  margin-left: 0.4rem;
+  line-height: 24px;
+}
 nav {
   margin-top: 2.5rem;
   border-bottom: 1px solid styles.$primary-color;
 }
-a {
-  color: styles.$primary-color;
-  line-height: 20px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  &:hover {
-    color: styles.$primary-color;
-    background-color: styles.$grey-0;
-    border-radius: 10px;
-  }
-  &:visited {
-    color: styles.$primary-color;
-    background-color: styles.$grey-0;
-    border-radius: 10px;
-  }
-  &:active {
-    color: styles.$primary-color;
-    background-color: styles.$grey-0;
-    border-radius: 10px;
-  }
-}
+
 li {
+  &.nav-item:active {
+    color: styles.$primary-color;
+    background-color: styles.$grey-0;
+    border-radius: 10px;
+    border-bottom: 1px solid white;
+  }
   &.nav-item:active {
     border-bottom: 1px solid white;
   }
