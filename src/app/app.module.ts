@@ -15,6 +15,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TimeLineComponent } from './main-pannel/time-line/time-line.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FooterComponent,
     SidePannelComponent,
     MainPannelComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,
