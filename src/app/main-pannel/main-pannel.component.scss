@@ -15,6 +15,10 @@ $spacer: 1rem;
     &:hover {
       background-color: styles.$grey-0;
     }
+    &.mat-chip{
+      justify-content: center;
+      min-width: 159px;
+    }
   }
 }
 p {
@@ -31,9 +35,7 @@ p {
   border: 1px solid styles.$primary-color;
   border-radius: 6px;
 }
-.mt-6 {
-  margin-top: ($spacer * 5);
-}
+
 .icon {
   margin-left: $spacer * 2;
   margin-right: $spacer;
@@ -69,7 +71,102 @@ p {
 .education-history{
   margin-top: 0rem;
 }
-@media only screen and (max-width: 600px){
+//samsung fold
+@media only screen and (max-width: 280px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 127.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 0rem !important;
+  }
+  p{
+    font-size: 11px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+//smaller phones
+@media only screen and (max-width: 360px) and (min-width:281px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 110.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 0rem !important;
+  }
+  p{
+    font-size: 11px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+//iphone SE
+@media only screen and (max-width: 375px) and (min-width:361px){
   div.introduction-box{
     margin-top: 0rem !important;
   }
@@ -92,8 +189,214 @@ p {
   }
   :host::ng-deep{
     & mat-chip.mat-chip{
-      font-size: 11px;
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 116.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
     }
 
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+//iphone12 pro
+@media only screen and (max-width: 393px) and (min-width: 376px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 121.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 0rem !important;
+  }
+  p{
+    font-size: 11px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+//iphone XR
+@media only screen and (max-width: 414px) and (min-width: 395px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 126.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 0rem !important;
+  }
+  p{
+    font-size: 12px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 115.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 3rem !important;
+  }
+  p{
+    font-size: 14px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
+  }
+}
+//Ipad mini
+@media only screen and (max-width: 1200px) and (min-width:768px){
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      margin-left: 1px;
+      margin-right:2px;
+      min-width: 130.6px;
+      font-size: 10px;
+      padding-right:0px;
+      justify-content: center;
+    }
+  }
+  div.introduction-box{
+    margin-top: 3rem !important;
+  }
+  p{
+    font-size: 14px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:110px;
+    min-width:420px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  .business-name{
+    display: flex;
+    align-items: center;
+    & h4{
+      color: styles.$secondary-color;
+      font-weight: 700;
+      margin:0px;
+      margin-right:1rem;
+    }
+    & mat-icon{
+      margin-left:0.1rem;
+      margin-right:0.1rem;
+    }
   }
 }

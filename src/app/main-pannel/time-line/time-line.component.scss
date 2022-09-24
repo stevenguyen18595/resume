@@ -189,3 +189,66 @@
         margin-right: 3px;
     }
 }
+//Ipad mini or ipad air
+@media only screen and (max-width: 1200px) and (min-width:768px){
+    .single-timeline-area {
+        padding-left: 110px;
+    }
+    .single-timeline-area .timeline-date {
+        position: absolute;
+        width: 116px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding-right: 33px;
+        & div {
+            display: flex;
+            & p {
+                width: 26px;
+                font-size:9px;
+                margin-left:0.2rem;
+                margin-right:0.2rem;
+            }
+            & mat-icon{
+                line-height: 40px;
+            }
+        }
+    }
+    .single-timeline-area .single-timeline-content  {
+        padding:10px;
+        & .timeline-text h3{
+            font-weight: 600;
+            font-size: 13px;
+            color: styles.$secondary-color;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            margin-bottom: 0px;
+        }
+
+    }
+    .single-timeline-area .single-timeline-content .timeline-icon {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        width: 30px;
+        height: 30px;
+        background-color: styles.$secondary-color;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+        flex: 0 0 30px;
+        text-align: center;
+        max-width: 30px;
+        border-radius: 50%;
+        margin-right: 3px;
+    }
+}
