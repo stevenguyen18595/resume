@@ -45,3 +45,43 @@ mat-chip {
 mat-icon.icon:hover {
   fill: styles.$secondary-color;
 }
+.side-panel-1{
+  border-bottom: 1px solid styles.$primary-color;
+  margin-top:1.3rem;
+  & mat-list{
+    margin-bottom: 1rem;
+  }
+}
+.side-panel-2{
+  border-bottom: 1px solid styles.$primary-color;
+  margin-top:1.3rem;
+  padding-bottom: 1rem;
+}
+.side-panel-3{
+  margin-top:1rem
+}
+
+@media only screen and (max-width: 600px) {
+  .avatar{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    & div {
+      margin-left: 1rem;
+      & h3,h6 {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  div.avatar > img{
+  width: 57.16px;
+  height:57.16px;
+  }
+  .side-panel-1{
+    border-bottom: 1px solid styles.$primary-color;
+    margin-top:1rem;
+    & mat-list{
+      margin-bottom: 1rem;
+    }
+  }
+}

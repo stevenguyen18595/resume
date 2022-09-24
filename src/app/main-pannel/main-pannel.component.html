@@ -25,7 +25,7 @@
 <div class="skill-session mt-4">
   <div class="title">Skills</div>
   <mat-chip-list #chipList aria-label="skill selection">
-    <mat-chip color="accent" *ngFor="let skill of skills">
+    <mat-chip *ngFor="let skill of skills">
       {{ skill }}
       <button matChipRemove>
         <mat-icon>cancel</mat-icon>
@@ -36,7 +36,7 @@
 <!-- ------------------------------Employment History---------------------------------------------------------- -->
 <div class="row employment-history mt-4">
   <div class="tittle">Employment</div>
-  <div class="col-6 mt-3">
+  <div class="col-lg-6 mt-3 col-md-7 col-sm-8">
     <div class="history">
       <div class="business-name mt-2">
         <mat-icon> business</mat-icon>
@@ -61,9 +61,9 @@
       </p>
     </div>
   </div>
-  <div class="col-6 mt-3">
+  <div class="col-lg-6 col-md-5 col-sm-4 mt-3">
     <div class="history">
-      <div class="business-name">
+      <div class="business-name mt-2">
         <mat-icon>business</mat-icon>
         <h4>Freelancer</h4>
         <p>July 2016</p>

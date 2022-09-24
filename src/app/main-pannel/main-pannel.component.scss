@@ -21,6 +21,7 @@ p {
   margin: 0;
   text-align: middle;
 }
+
 .title {
   margin-top: 1rem;
   margin-left: 0rem;
@@ -43,6 +44,7 @@ p {
 
 .history{
   min-height:105px;
+  min-width:415px;
   border: 0.5px solid styles.$primary-color;
   border-radius: 5px;
   & > p {
@@ -66,4 +68,32 @@ p {
 }
 .education-history{
   margin-top: 0rem;
+}
+@media only screen and (max-width: 600px){
+  div.introduction-box{
+    margin-top: 0rem !important;
+  }
+  p{
+    font-size: 12px;
+  }
+  .icon {
+    margin-left: $spacer/3;
+    margin-right: $spacer;
+  }
+  .history{
+    min-height:105px;
+    min-width:36px;
+    border: 0.5px solid styles.$primary-color;
+    border-radius: 5px;
+    & > p {
+      margin-left:0.6rem;
+      margin-top:0.5rem;
+    }
+  }
+  :host::ng-deep{
+    & mat-chip.mat-chip{
+      font-size: 11px;
+    }
+
+  }
 }
