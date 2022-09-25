@@ -1,10 +1,11 @@
 {
   "name": "resume",
   "version": "0.0.0",
+  "homepage": "https://stevenguyen18595.github.io/resume/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href \"/resume/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
