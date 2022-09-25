@@ -90,7 +90,7 @@ p {
     font-size: 11px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc(calc($spacer/3));
     margin-right: $spacer;
   }
   .history{
@@ -137,7 +137,7 @@ p {
     font-size: 11px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc(calc($spacer/3));
     margin-right: $spacer;
   }
   .history{
@@ -174,7 +174,7 @@ p {
     font-size: 12px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
   .history{
@@ -232,7 +232,7 @@ p {
     font-size: 11px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
   .history{
@@ -279,7 +279,7 @@ p {
     font-size: 12px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
   .history{
@@ -325,7 +325,7 @@ p {
     font-size: 14px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
   .history{
@@ -372,7 +372,7 @@ p {
     font-size: 14px;
   }
   .icon {
-    margin-left: $spacer/3;
+    margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
   .history{
