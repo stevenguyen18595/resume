@@ -46,31 +46,31 @@ export class AppModule {
     this.matIconRegistry.addSvgIcon(
       'leet-code',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/img/leetcode-white.svg'
+        './assets/img/leetcode-white.svg'
       )
     );
     this.matIconRegistry.addSvgIcon(
       'speak-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/img/speak-icon.svg'
+        './assets/img/speak-icon.svg'
       )
     );
     this.matIconRegistry.addSvgIcon(
       'firework-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/img/firework-icon.svg'
+        './assets/img/firework-icon.svg'
       )
     );
     this.matIconRegistry.addSvgIcon(
       'skill-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/img/skill-icon.svg'
+        './assets/img/skill-icon.svg'
       )
     );
     this.matIconRegistry.addSvgIcon(
       'heart-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(
-        '../../assets/img/heart-icon.svg'
+        './assets/img/heart-icon.svg'
       )
     );
   }
