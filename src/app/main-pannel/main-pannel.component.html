@@ -24,29 +24,65 @@
 <!-- ---------------------------Skill Session--------------------------------------------------------- -->
 <div class="skill-session mt-4">
   <div class="title">Skills</div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <h3>Frontend</h3>
+      <mat-chip-list #chipList aria-label="skill selection">
+        <mat-chip *ngFor="let skill of frontEndSkills">
+          {{ skill }}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h3>Backend</h3>
+      <mat-chip-list #chipList aria-label="skill selection">
+        <mat-chip *ngFor="let skill of backEndSkills">
+          {{ skill }}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <h3 class="mt-3">Database</h3>
+      <mat-chip-list #chipList aria-label="skill selection">
+        <mat-chip *ngFor="let skill of databaseSkills">
+          {{ skill }}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h3 class="mt-3">CI/CD</h3>
+      <mat-chip-list #chipList aria-label="skill selection">
+        <mat-chip *ngFor="let skill of ci_cdSkills">
+          {{ skill }}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+  <h3 class="mt-3">Testing</h3>
   <mat-chip-list #chipList aria-label="skill selection">
-    <mat-chip *ngFor="let skill of skills">
+    <mat-chip *ngFor="let skill of testingSkills">
       {{ skill }}
-      <button matChipRemove>
-        <mat-icon>cancel</mat-icon>
-      </button>
     </mat-chip>
   </mat-chip-list>
 </div>
 <!-- ------------------------------Employment History---------------------------------------------------------- -->
 <div class="row employment-history mt-4">
-  <div class="tittle">Employment</div>
-  <div class="col-xl-6 col-lg-12 mt-3 col-md-12 col-sm-8">
+  <div class="title">Employment</div>
+  <div class="col-xl-12 col-lg-12 mt-3 col-md-12 col-sm-8">
     <div class="history">
       <div class="business-name mt-2">
         <mat-icon> business</mat-icon>
         <h4>Patient Zero Pty Ltd</h4>
         <p>Jan 2022</p>
         <mat-icon>timeline</mat-icon>
-        <p> present</p>
+        <p>present</p>
       </div>
-      <p>As a Developer, I’m part of a cross functional team that delivers working software for clients that helps them
-        solve real business problems.
+      <p>
+        As a Developer, I’m part of a cross functional team that delivers
+        working software for clients that helps them solve real business
+        problems.
       </p>
     </div>
     <div class="history mt-3">
@@ -57,23 +93,10 @@
         <mat-icon>timeline</mat-icon>
         <p>Jan 2022</p>
       </div>
-      <p>As a developer, I am part of a team building beautiful software that automates the insurance broker function.
+      <p>
+        As a developer, I am part of a team building beautiful software that
+        automates the insurance broker function.
       </p>
-    </div>
-  </div>
-  <div class="col-xl-6 col-lg-12 col-md-12 col-sm-4 mt-3">
-    <div class="history">
-      <div class="business-name mt-2">
-        <mat-icon>business</mat-icon>
-        <h4>Freelancer</h4>
-        <p>July 2016</p>
-        <mat-icon>timeline</mat-icon>
-        <p> present</p>
-      </div>
-      <p>As a developer, I have a joy of making website | web application for small business in my freetime</p>
-    </div>
-    <div class="mt-3">
-
     </div>
   </div>
 </div>

@@ -2,7 +2,6 @@
 
 $spacer: 1rem;
 
-
 :host::ng-deep {
   & mat-list-item.mat-list-item {
     height: 30px;
@@ -12,21 +11,30 @@ $spacer: 1rem;
   }
   & mat-chip {
     background-color: styles.$secondary-color;
+    &.mat-standard-chip {
+      border-radius: 0;
+    }
     &:hover {
       background-color: styles.$grey-0;
     }
-    &.mat-chip{
+    &.mat-chip {
       justify-content: center;
       min-width: 159px;
     }
   }
 }
+
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
   text-align: middle;
 }
 
 .title {
+  font-size: 20px;
   margin-top: 1rem;
   margin-left: 0rem;
   margin-bottom: 0.6rem;
@@ -44,359 +52,358 @@ p {
   margin-right: $spacer;
 }
 
-.history{
-  min-height:105px;
-  min-width:415px;
+.history {
+  min-height: 105px;
+  min-width: 415px;
   border: 0.5px solid styles.$primary-color;
   border-radius: 5px;
   & > p {
-    margin-left:0.6rem;
-    margin-top:0.5rem;
+    margin-left: 0.6rem;
+    margin-top: 0.5rem;
   }
 }
-.business-name{
+.business-name {
   display: flex;
   align-items: center;
-  & h4{
+  & h4 {
     color: styles.$secondary-color;
     font-weight: 700;
-    margin:0px;
-    margin-right:1rem;
+    margin: 0px;
+    margin-right: 1rem;
   }
-  & mat-icon{
-    margin-left:0.5rem;
-    margin-right:0.5rem;
+  & mat-icon {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
-.education-history{
+.education-history {
   margin-top: 0rem;
 }
 //samsung fold
-@media only screen and (max-width: 280px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (max-width: 280px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 127.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 0rem !important;
   }
-  p{
+  p {
     font-size: 11px;
   }
   .icon {
     margin-left: calc(calc($spacer/3));
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
 //smaller phones
-@media only screen and (max-width: 360px) and (min-width:281px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (max-width: 360px) and (min-width: 281px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 110.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 0rem !important;
   }
-  p{
+  p {
     font-size: 11px;
   }
   .icon {
     margin-left: calc(calc($spacer/3));
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
 //iphone SE
-@media only screen and (max-width: 375px) and (min-width:361px){
-  div.introduction-box{
+@media only screen and (max-width: 375px) and (min-width: 361px) {
+  div.introduction-box {
     margin-top: 0rem !important;
   }
-  p{
+  p {
     font-size: 12px;
   }
   .icon {
     margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 116.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
-
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
 //iphone12 pro
-@media only screen and (max-width: 393px) and (min-width: 376px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (max-width: 393px) and (min-width: 376px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 121.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 0rem !important;
   }
-  p{
+  p {
     font-size: 11px;
   }
   .icon {
     margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
 //iphone XR
-@media only screen and (max-width: 414px) and (min-width: 395px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (max-width: 414px) and (min-width: 395px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 126.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 0rem !important;
   }
-  p{
+  p {
     font-size: 12px;
   }
   .icon {
     margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
-@media only screen and (min-width: 1200px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (min-width: 1200px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 115.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 3rem !important;
   }
-  p{
+  p {
     font-size: 14px;
   }
   .icon {
     margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
-  .history{
-    min-height:105px;
-    min-width:36px;
+  .history {
+    min-height: 105px;
+    min-width: 36px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
 //Ipad mini
-@media only screen and (max-width: 1200px) and (min-width:768px){
-  :host::ng-deep{
-    & mat-chip.mat-chip{
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+  :host::ng-deep {
+    & mat-chip.mat-chip {
       margin-left: 1px;
-      margin-right:2px;
+      margin-right: 2px;
       min-width: 130.6px;
-      font-size: 10px;
-      padding-right:0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
-  div.introduction-box{
+  div.introduction-box {
     margin-top: 3rem !important;
   }
-  p{
+  p {
     font-size: 14px;
   }
   .icon {
     margin-left: calc($spacer/3);
     margin-right: $spacer;
   }
-  .history{
-    min-height:110px;
-    min-width:420px;
+  .history {
+    min-height: 110px;
+    min-width: 420px;
     border: 0.5px solid styles.$primary-color;
     border-radius: 5px;
     & > p {
-      margin-left:0.6rem;
-      margin-top:0.5rem;
+      margin-left: 0.6rem;
+      margin-top: 0.5rem;
     }
   }
-  .business-name{
+  .business-name {
+    padding: 0 0.5rem;
     display: flex;
     align-items: center;
-    & h4{
+    & h4 {
       color: styles.$secondary-color;
       font-weight: 700;
-      margin:0px;
-      margin-right:1rem;
+      margin: 0px;
+      margin-right: 1rem;
     }
-    & mat-icon{
-      margin-left:0.1rem;
-      margin-right:0.1rem;
+    & mat-icon {
+      margin-left: 0.1rem;
+      margin-right: 0.1rem;
     }
   }
 }
