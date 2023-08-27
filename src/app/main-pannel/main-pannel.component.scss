@@ -11,6 +11,9 @@ $spacer: 1rem;
   }
   & mat-chip {
     background-color: styles.$secondary-color;
+    &.mat-standard-chip {
+      border-radius: 0;
+    }
     &:hover {
       background-color: styles.$grey-0;
     }
@@ -20,13 +23,18 @@ $spacer: 1rem;
     }
   }
 }
+
+h3 {
+  margin: 0;
+}
+
 p {
   margin: 0;
   text-align: middle;
 }
 
 .title {
-  font-size: large;
+  font-size: 20px;
   margin-top: 1rem;
   margin-left: 0rem;
   margin-bottom: 0.6rem;
@@ -78,8 +86,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 127.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -126,8 +133,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 110.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -194,8 +200,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 116.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -222,8 +227,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 121.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -270,8 +274,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 126.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -317,8 +320,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 115.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }
@@ -365,8 +367,7 @@ p {
       margin-left: 1px;
       margin-right: 2px;
       min-width: 130.6px;
-      font-size: 10px;
-      padding-right: 0px;
+      font-size: 14px;
       justify-content: center;
     }
   }

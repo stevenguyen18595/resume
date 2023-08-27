@@ -6,32 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-pannel.component.scss'],
 })
 export class MainPannelComponent implements OnInit {
-  skills: string[] = [
+  frontEndSkills: string[] = [
     'Html',
     'Css',
     'Sass',
-    'Javascript',
-    'Typescript',
     'Bootstrap',
     'Bulma',
-    'Angular 2',
-    'C#',
-    'Java',
-    'Python',
-    'Nodejs',
-    'Spring Boot',
-    '.Net6',
-    'Flask',
-    'Sql DB',
-    'NoSql DB',
-    'Azure Devops',
-    'AWS',
-    'Jira',
-    'Github',
-    'Gitlab',
-    'Git',
-    'Source Tree',
+    'Javascript',
+    'Typescript',
+    'Angular',
+    'React',
   ];
+  backEndSkills: string[] = [
+    'Java',
+    'Spring Boot',
+    'C#',
+    '.Net',
+    'Python',
+    'Flask',
+    'Php',
+    'Laravel',
+  ];
+  databaseSkills: string[] = [
+    'PostgreSql',
+    'MySql',
+    'SqlServer',
+    'Sqlite',
+    'DynamoDb',
+  ];
+  ci_cdSkills: string[] = ['Github Action', 'Aws Pipeline', 'Openshift'];
+  testingSkills: string[] = ['Cypress', 'Selenium'];
   constructor() {}
 
   ngOnInit(): void {}
